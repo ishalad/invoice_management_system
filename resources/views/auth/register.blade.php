@@ -16,7 +16,23 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-        <!-- Password -->
+        <div>
+            <x-input-label for="company_name" :value="__('Company Name')" />
+            <x-text-input id="company_name" class="block mt-1 w-full" type="text" name="company_name" :value="old('company_name')" required autofocus autocomplete="company_name" />
+            <x-input-error :messages="$errors->get('company_name')" class="mt-2" />
+        </div>
+        <div>
+            <x-input-label for="company_address" :value="__('Name')" />
+            <x-text-input id="company_address" class="block mt-1 w-full" type="text" name="company_address" :value="old('company_address')" required autofocus autocomplete="company_address" />
+            <x-input-error :messages="$errors->get('company_address')" class="mt-2" />
+        </div>
+        <div>
+            <x-input-label for="company_gst_number" :value="__('GST Number')" />
+            <x-text-input id="company_gst_number" class="block mt-1 w-full" type="text" name="company_gst_number" :value="old('company_gst_number')" required autofocus autocomplete="company_gst_number" />
+            <x-input-error :messages="$errors->get('company_gst_number')" class="mt-2" />
+        </div>
+        <!-- Password --> 
+
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
 
